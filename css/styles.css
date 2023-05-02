@@ -924,6 +924,10 @@ info-link.link:focus {
 }
 
 
+
+
+
+
 /* Subscribe */
 .Subscribe {
   width: 453px;
@@ -955,14 +959,28 @@ info-link.link:focus {
 
 }
 
-.input-checkbox:checked+.svg-iconka-checkbox>.modal-cvadrat-gal {
+.modal-form-unchecked {
+  opacity: 0;
+  transition: var(--anim-fas);
+}
+
+.input-checkbox:checked+.svg-iconka-checkbox>.modal-form-unchecked {
   opacity: 1;
 }
 
-.modal-cvadrat-gal {
+
+.modal-form-checked {
   opacity: 0;
+  transition: var(--anim-fas);
 }
 
+.input-checkbox:checked+.svg-iconka-checkbox>.modal-form-checked {
+  opacity: 1;
+}
+
+.modal-form-unchecked {
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
 
 
 
